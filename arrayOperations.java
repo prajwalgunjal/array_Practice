@@ -12,8 +12,20 @@ public class arrayOperations {
             int element = sc.nextInt();
             arr[i]=element;
         }
+        System.out.println("********************");
+        System.out.println("all elements in array :");
+        System.out.println("********************");
         for(int i=0;i<arr.length;i++){
-            System.out.println(arr[i]);
+            System.out.print(arr[i]);
         }
+        int biggest = arr[0];
+        for (int i = 1;i<arr.length;i++)
+        {
+            if(biggest<arr[i])
+            {
+                biggest=arr[i];
+            }
+        }
+        System.out.println("Biggest number from the array is :-" +biggest);
     }
 }
