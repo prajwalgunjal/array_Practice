@@ -12,7 +12,8 @@ public class arrayOperations {
             int element = sc.nextInt();
             arr[i]=element;
         }
-        System.out.println("********************");
+
+        System.out.println("\t ********************");
         System.out.println("all elements in array :");
         System.out.println("********************");
         for(int i=0;i<arr.length;i++){
@@ -26,6 +27,17 @@ public class arrayOperations {
                 biggest=arr[i];
             }
         }
+        System.out.println("********************");
         System.out.println("Biggest number from the array is :-" +biggest);
+        System.out.println("********************");
+        int smallest = arr[0];
+        for(int i =0;i<arr.length;i++)
+        {
+            if(smallest>arr[i])
+            {
+                smallest=arr[i];
+            }
+        }
+        System.out.println("Smallest element from the array is "+smallest);
     }
 }
