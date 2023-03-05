@@ -45,10 +45,65 @@ public class arrayOperations {
         System.out.println("********************");
         for(int i=0;i<arr.length;i++)
         {
-            if(i%2==0)
+            if(i%2!=0)
             {
-                System.out.println(arr[i]);
+                System.out.print(" "+arr[i]);
             }
         }
+        System.out.println("********************");
+        System.out.println("Print array in reverse order:- ");
+        System.out.println("********************");
+        for(int i=arr.length-1;i>arr[0];i--)
+        {
+            System.out.println(" "+arr[i]);
+        }
+        System.out.println("********************");
+        System.out.println("Printing odd position number:- ");
+        System.out.println("********************");
+        for(int i=0;i<arr.length;i++)
+        {
+            if(i%2==0) {
+                System.out.print(" "+arr[i]);
+            }
+        }
+        System.out.println("********************");
+        System.out.println("Duplicate element of aray :- ");
+        System.out.println("********************");
+
+
+        for(int i=1;i<=arr.length;i++)
+        {
+            for(int j=i+1;j<=arr.length-1;j++)
+            {
+
+                    if (arr[i] == arr[j]) {
+                        System.out.println(arr[i] + "is a duplicate entry in tthe array");
+                    }
+            }
+        }
+        System.out.println("********************");
+        System.out.println("Sorting of array");
+        System.out.println("********************");
+        int temp =0;
+        int a,b;
+        for(int i=0;i<=arr.length;i++)
+        {
+            for(int j=i+1;j<arr.length;j++)
+            {
+                if(arr[i]>arr[j])
+                {
+                    temp=arr[i];
+                    arr[i]=arr[j];
+                    arr[j]=temp;
+                }
+            }
+        }
+        System.out.println("after sorting array");
+        for(int i=0;i<arr.length;i++)
+        {
+            System.out.print(arr[i]);
+        }
+        System.out.println("second largest element of the array is " +arr[arr.length-2]);
+
     }
 }
