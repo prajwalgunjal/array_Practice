@@ -39,5 +39,16 @@ public class arrayOperations {
             }
         }
         System.out.println("Smallest element from the array is "+smallest);
+
+        System.out.println("********************");
+        System.out.println("Element which are present on even location");
+        System.out.println("********************");
+        for(int i=0;i<arr.length;i++)
+        {
+            if(i%2==0)
+            {
+                System.out.println(arr[i]);
+            }
+        }
     }
 }
